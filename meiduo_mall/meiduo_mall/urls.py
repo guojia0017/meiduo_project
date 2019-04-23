@@ -22,5 +22,7 @@ urlpatterns = [
     # url(view.as_view())
     # url(r'^register/$', views.RegisterView.as_view(), name='register'),
     # url(r'^',include('user.urls', namespace=
-    url(r'^',include('users.urls',namespace='users'))
+    url(r'^',include('users.urls',namespace='users')),
+    url(r'^', include('contents.urls', namespace='contents')),
+    url(r'^', include('verifications.urls',namespace='verifications'))
 ]

@@ -137,3 +137,409 @@ Traceback (most recent call last):
     "Could not find backend '%s': %s" % (backend, e))
 django.core.cache.backends.base.InvalidCacheBackendError: Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'
 ERROR 2019-04-23 00:48:51,295 basehttp 124 "GET /favicon.ico HTTP/1.1" 500 93674
+ERROR 2019-04-23 06:14:14,913 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/__init__.py", line 51, in _create_cache
+    backend_cls = import_string(backend)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django_redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/middleware.py", line 20, in process_request
+    request.session = self.SessionStore(session_key)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 18, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/__init__.py", line 80, in __getitem__
+    cache = _create_cache(alias)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/__init__.py", line 54, in _create_cache
+    "Could not find backend '%s': %s" % (backend, e))
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'
+ERROR 2019-04-23 06:14:15,263 basehttp 124 "GET / HTTP/1.1" 500 93897
+ERROR 2019-04-23 06:14:16,339 exception 135 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/__init__.py", line 51, in _create_cache
+    backend_cls = import_string(backend)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django_redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/middleware.py", line 20, in process_request
+    request.session = self.SessionStore(session_key)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 18, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/__init__.py", line 80, in __getitem__
+    cache = _create_cache(alias)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/__init__.py", line 54, in _create_cache
+    "Could not find backend '%s': %s" % (backend, e))
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'
+ERROR 2019-04-23 06:14:16,535 basehttp 124 "GET /favicon.ico HTTP/1.1" 500 93939
+ERROR 2019-04-23 06:19:36,063 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'jinja2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/contents/views.py", line 12, in get
+    return render(request, 'index.html')
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/utils.py", line 79, in __getitem__
+    engine_cls = import_string(backend)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 6, in <module>
+    import jinja2
+ImportError: No module named 'jinja2'
+ERROR 2019-04-23 06:19:36,478 basehttp 124 "GET / HTTP/1.1" 500 137182
+WARNING 2019-04-23 06:19:38,149 base 152 Not Found: /favicon.ico
+WARNING 2019-04-23 06:19:38,150 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2424
+ERROR 2019-04-23 06:20:32,299 exception 135 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/contents/views.py", line 12, in get
+    return render(request, 'index.html')
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2019-04-23 06:20:32,383 basehttp 124 "GET / HTTP/1.1" 500 97409
+INFO 2019-04-23 06:23:25,168 basehttp 124 "GET / HTTP/1.1" 200 25127
+INFO 2019-04-23 06:23:25,260 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-04-23 06:23:25,367 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2019-04-23 06:23:25,387 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-04-23 06:23:25,399 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2019-04-23 06:23:25,403 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-04-23 06:23:25,407 basehttp 124 "GET /static/js/index.js HTTP/1.1" 200 1418
+INFO 2019-04-23 06:23:25,453 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2019-04-23 06:23:25,496 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 120
+INFO 2019-04-23 06:23:25,513 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2019-04-23 06:23:25,528 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2019-04-23 06:23:25,604 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2019-04-23 06:23:25,633 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2019-04-23 06:23:25,707 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2019-04-23 06:23:25,720 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2019-04-23 06:23:25,723 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2019-04-23 06:23:25,734 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2019-04-23 06:23:25,713 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2019-04-23 06:23:25,727 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2019-04-23 06:23:25,820 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 200 8579
+INFO 2019-04-23 06:23:25,826 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 200 6565
+INFO 2019-04-23 06:23:25,835 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 200 7578
+INFO 2019-04-23 06:23:25,837 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2019-04-23 06:23:25,843 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 200 7072
+INFO 2019-04-23 06:23:25,851 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+INFO 2019-04-23 06:23:25,883 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 200 8738
+INFO 2019-04-23 06:23:26,803 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2019-04-23 06:25:54,369 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,374 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,383 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,418 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,422 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,431 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,435 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,443 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,458 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,464 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,482 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,488 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,508 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,529 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,569 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,594 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,616 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,645 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,657 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,681 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:54,694 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,687 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,700 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,716 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,752 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,770 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,785 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,796 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,817 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,835 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,855 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,875 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,889 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,902 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,913 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,923 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,940 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,955 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,975 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:55,985 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:56,030 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:25:56,040 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,055 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,068 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,103 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,107 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,111 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,138 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,157 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,163 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,184 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,204 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,224 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,241 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,263 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,276 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,285 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,319 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,330 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,348 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,366 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,380 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:26:01,393 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,411 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,429 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,437 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,439 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,444 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,458 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,479 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,492 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,511 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,528 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,573 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,588 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,599 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,622 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,643 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,653 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,672 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,683 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,719 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,739 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:06,756 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,324 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,337 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,341 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,363 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,380 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,396 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,404 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,421 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,457 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,470 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,481 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,501 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,523 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,535 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,565 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,603 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,622 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,663 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,671 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,679 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:07,707 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,723 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,760 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,765 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,776 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,795 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,802 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,809 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,830 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,854 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,872 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,883 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,898 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,912 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,930 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,934 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,989 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:12,993 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:13,005 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:13,013 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:13,028 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:32:13,034 basehttp 124 "GET / HTTP/1.1" 302 0
+INFO 2019-04-23 06:39:03,788 basehttp 124 "GET / HTTP/1.1" 200 25127
+WARNING 2019-04-23 06:39:05,142 base 152 Not Found: /favicon.ico
+WARNING 2019-04-23 06:39:05,144 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2424
+INFO 2019-04-23 06:39:06,646 basehttp 124 "GET /register/ HTTP/1.1" 200 326
+INFO 2019-04-23 06:39:13,529 basehttp 124 "GET /register/ HTTP/1.1" 200 326
+INFO 2019-04-23 06:39:55,189 basehttp 124 "GET /register/ HTTP/1.1" 200 326
+INFO 2019-04-23 06:40:31,633 basehttp 124 "GET /register/ HTTP/1.1" 200 4525
+INFO 2019-04-23 06:40:31,854 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2019-04-23 06:40:31,882 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2019-04-23 06:40:31,919 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2019-04-23 06:40:31,990 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9786
+WARNING 2019-04-23 06:40:54,379 csrf 160 Forbidden (CSRF token missing or incorrect.): /register/
+WARNING 2019-04-23 06:40:54,393 basehttp 124 "POST /register/ HTTP/1.1" 403 2502
+INFO 2019-04-23 06:58:53,678 basehttp 124 "GET /register/ HTTP/1.1" 200 4525
+WARNING 2019-04-23 06:59:20,602 csrf 160 Forbidden (CSRF token missing or incorrect.): /register/
+WARNING 2019-04-23 06:59:20,608 basehttp 124 "POST /register/ HTTP/1.1" 403 2502
+INFO 2019-04-23 07:49:45,832 basehttp 124 "GET /register/ HTTP/1.1" 200 4525
+WARNING 2019-04-23 07:50:09,592 csrf 160 Forbidden (CSRF token missing or incorrect.): /register/
+WARNING 2019-04-23 07:50:09,594 basehttp 124 "POST /register/ HTTP/1.1" 403 2502
+ERROR 2019-04-23 07:53:36,322 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 45, in get_template
+    return Template(self.env.get_template(template_name), self)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/templates/register.html", line 28, in template
+    {% csrf_token %}
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'csrf_token'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 23, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 55, in get_template
+    six.reraise(TemplateSyntaxError, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/template/backends/jinja2.py", line 45, in get_template
+    return Template(self.env.get_template(template_name), self)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/templates/register.html", line 28, in template
+    {% csrf_token %}
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'csrf_token'.",)
+ERROR 2019-04-23 07:53:36,733 basehttp 124 "GET /register/ HTTP/1.1" 500 316552
+INFO 2019-04-23 07:54:25,414 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+WARNING 2019-04-23 07:54:45,171 basehttp 124 "POST /register/ HTTP/1.1" 403 12

@@ -1,10 +1,11 @@
 import re
 from django import http
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import AbstractUser, User
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
+from django.urls import reverse
 from django.views import View
 from pymysql import DatabaseError
 
@@ -18,6 +19,7 @@ class RegisterView(View):
         :param request: 请求对象
         :return: 注册界面
         """
+        print("adsfasdf")
         return render(request, 'register.html')
     def post(self,request):
         username = request.POST.get('username')
@@ -41,16 +43,28 @@ class RegisterView(View):
         #判断手机号
         if not re.match(r'^1[3-9]\d{9}$', mobile):
             return http.HttpResponseForbidden('请输入正确的手机号码')
-        # 判断是否勾选用户协议
-        if allow != 'on':
-            return http.HttpResponseForbidden('请勾选用户协议')
+        #判断手机号是否已经在数据库存在
+        if User.objects.filter(mobile = mobile).count() > 0:
+            return http.HttpResponseBadRequest('手机号已存在')
+
+        # 判断是否勾选用户协议，已经在前端验证，不用重复
+        # if allow != 'on':
+        #     return http.HttpResponseForbidden('请勾选用户协议')
+
+        #判断注册是否成功　user为数据库存储
         try:
-            User.objects.create_user(username=username, password=password, mobile=mobile)
+            #user = User.objects.create(username=username, password=password, mobile=mobile )
+            #其中，User是指这个表，保存密码时没有加密所以用create_user()方法
+            user = User.objects.create_user(username=username, password=password, mobile=mobile)
         except DatabaseError:
             return render(request, 'register.html', {'register_errmsg': '注册失败'})
+        # 实现状态保持
+
+        #request.session['user_id'] = user.id  利用session封装
+        login(request, user)
 
         # 响应注册结果
-        return http.HttpResponse('注册成功，重定向到首页')
+        return redirect(reverse('contents:index'))
 
 class UsernameCountView(View):
     """判断用户名是否重复注册"""
@@ -62,5 +76,17 @@ class UsernameCountView(View):
         :return: JSON
         """
         count = User.objects.filter(username=username).count()
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK', 'count': count})
+
+class MobileCountView(View):
+    """判断手机号是否重复注册"""
+
+    def get(self, request, mobile):
+        """
+        :param request: 请求对象
+        :param mobile: 手机号
+        :return: JSON
+        """
+        count = User.objects.filter(mobile=mobile).count()
         return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK', 'count': count})
 
