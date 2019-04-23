@@ -543,3 +543,335 @@ django.template.exceptions.TemplateSyntaxError: ("Encountered unknown tag 'csrf_
 ERROR 2019-04-23 07:53:36,733 basehttp 124 "GET /register/ HTTP/1.1" 500 316552
 INFO 2019-04-23 07:54:25,414 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
 WARNING 2019-04-23 07:54:45,171 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+INFO 2019-04-23 09:43:55,395 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+INFO 2019-04-23 09:47:01,764 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+WARNING 2019-04-23 09:52:42,385 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+WARNING 2019-04-23 09:54:05,575 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+INFO 2019-04-23 09:54:46,671 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+WARNING 2019-04-23 09:55:06,897 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+INFO 2019-04-23 09:57:01,248 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+WARNING 2019-04-23 09:57:22,960 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+WARNING 2019-04-23 09:58:14,102 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+INFO 2019-04-23 10:00:27,458 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+WARNING 2019-04-23 10:00:43,067 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+INFO 2019-04-23 11:43:01,995 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+INFO 2019-04-23 11:43:02,394 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-04-23 11:43:02,396 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-04-23 11:43:02,397 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 120
+INFO 2019-04-23 11:43:02,398 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-04-23 11:43:02,400 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-04-23 11:43:02,402 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-04-23 11:43:02,413 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 9786
+ERROR 2019-04-23 11:43:02,725 exception 135 Internal Server Error: /image_codes/7c9d891b-bba0-435c-9cdc-e3a808bb598c/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 11:43:03,023 basehttp 124 "GET /image_codes/7c9d891b-bba0-435c-9cdc-e3a808bb598c/ HTTP/1.1" 500 85249
+WARNING 2019-04-23 11:43:11,804 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 11:43:11,812 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 11:43:23,882 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 11:43:23,887 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 11:43:29,361 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 11:43:29,362 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 11:43:29,414 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 11:43:29,417 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 11:43:29,436 basehttp 124 "POST /register/ HTTP/1.1" 403 12
+INFO 2019-04-23 11:48:30,605 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+ERROR 2019-04-23 11:48:31,027 exception 135 Internal Server Error: /image_codes/aedb1a33-03f2-4136-b68a-6a14db90221a/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 11:48:31,213 basehttp 124 "GET /image_codes/aedb1a33-03f2-4136-b68a-6a14db90221a/ HTTP/1.1" 500 85249
+WARNING 2019-04-23 11:48:35,596 base 152 Not Found: /usernames/python/count/
+WARNING 2019-04-23 11:48:35,596 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 11:48:44,328 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 11:48:44,330 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 11:48:48,042 base 152 Not Found: /usernames/python/count/
+WARNING 2019-04-23 11:48:48,042 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 11:48:48,278 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 11:48:48,284 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+ERROR 2019-04-23 11:48:48,310 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 49, in post
+    if User.objects.filter(mobile = mobile).count() > 0:
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/db/models/manager.py", line 198, in __get__
+    cls._meta.swapped,
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'users.User'
+ERROR 2019-04-23 11:48:48,589 basehttp 124 "POST /register/ HTTP/1.1" 500 90662
+INFO 2019-04-23 11:57:38,377 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+INFO 2019-04-23 11:57:38,602 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-04-23 11:57:38,603 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+ERROR 2019-04-23 11:57:38,878 exception 135 Internal Server Error: /image_codes/6bf5ad46-db7f-444d-91b8-14f908b34091/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 11:57:39,033 basehttp 124 "GET /image_codes/6bf5ad46-db7f-444d-91b8-14f908b34091/ HTTP/1.1" 500 85249
+WARNING 2019-04-23 12:00:49,582 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 12:00:49,584 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 12:01:01,728 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 12:01:01,738 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 12:01:06,282 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 12:01:06,282 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 12:01:06,288 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 12:01:06,292 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+ERROR 2019-04-23 12:01:07,408 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 67, in post
+    login(request, user)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-04-23 12:01:07,746 basehttp 124 "POST /register/ HTTP/1.1" 500 149957
+INFO 2019-04-23 12:02:50,094 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+ERROR 2019-04-23 12:02:50,688 exception 135 Internal Server Error: /image_codes/dbea2255-fa34-4e58-9775-2cd9d919ad1d/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 12:02:50,843 basehttp 124 "GET /image_codes/dbea2255-fa34-4e58-9775-2cd9d919ad1d/ HTTP/1.1" 500 85351
+WARNING 2019-04-23 12:02:54,345 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 12:02:54,350 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 12:03:06,032 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 12:03:06,043 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 12:03:09,832 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 12:03:09,836 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 12:03:09,852 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 12:03:09,859 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 12:03:10,069 basehttp 124 "POST /register/ HTTP/1.1" 400 18
+ERROR 2019-04-23 12:03:16,696 exception 135 Internal Server Error: /image_codes/a1555910-d40f-4f63-94df-3a82e4e10440/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 12:03:16,807 basehttp 124 "GET /image_codes/a1555910-d40f-4f63-94df-3a82e4e10440/ HTTP/1.1" 500 85351
+WARNING 2019-04-23 12:03:20,001 base 152 Not Found: /usernames/guohongyan/count/
+WARNING 2019-04-23 12:03:20,013 basehttp 124 "GET /usernames/guohongyan/count/ HTTP/1.1" 404 2867
+WARNING 2019-04-23 12:03:31,246 base 152 Not Found: /mobiles/13904451155/count/
+WARNING 2019-04-23 12:03:31,258 basehttp 124 "GET /mobiles/13904451155/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 12:03:35,879 base 152 Not Found: /usernames/guohongyan/count/
+WARNING 2019-04-23 12:03:35,883 basehttp 124 "GET /usernames/guohongyan/count/ HTTP/1.1" 404 2867
+WARNING 2019-04-23 12:03:35,888 base 152 Not Found: /mobiles/13904451155/count/
+WARNING 2019-04-23 12:03:35,892 basehttp 124 "GET /mobiles/13904451155/count/ HTTP/1.1" 404 2864
+ERROR 2019-04-23 12:03:36,080 exception 135 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 67, in post
+    login(request, user)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-04-23 12:03:36,368 basehttp 124 "POST /register/ HTTP/1.1" 500 150075
+ERROR 2019-04-23 12:09:12,257 exception 135 Internal Server Error: /image_codes/6fff9100-812d-48de-bcab-fae59b71d60e/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 12:09:12,544 basehttp 124 "GET /image_codes/6fff9100-812d-48de-bcab-fae59b71d60e/ HTTP/1.1" 500 85351
+INFO 2019-04-23 12:13:25,182 basehttp 124 "GET /register/ HTTP/1.1" 200 4526
+INFO 2019-04-23 12:13:25,240 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:25,243 basehttp 124 "GET /static/js/register.js HTTP/1.1" 304 0
+ERROR 2019-04-23 12:13:25,484 exception 135 Internal Server Error: /image_codes/f7ea5d78-d23e-4cff-a952-1320142c2558/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/meiduo_mall/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, code,image = captcha.generate_captcha()
+AttributeError: module 'captcha' has no attribute 'generate_captcha'
+ERROR 2019-04-23 12:13:25,650 basehttp 124 "GET /image_codes/f7ea5d78-d23e-4cff-a952-1320142c2558/ HTTP/1.1" 500 85351
+WARNING 2019-04-23 12:13:28,686 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 12:13:28,689 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 12:13:40,108 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 12:13:40,109 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+WARNING 2019-04-23 12:13:43,768 base 152 Not Found: /usernames/guojia/count/
+WARNING 2019-04-23 12:13:43,773 basehttp 124 "GET /usernames/guojia/count/ HTTP/1.1" 404 2855
+WARNING 2019-04-23 12:13:43,789 base 152 Not Found: /mobiles/15763949168/count/
+WARNING 2019-04-23 12:13:43,789 basehttp 124 "GET /mobiles/15763949168/count/ HTTP/1.1" 404 2864
+INFO 2019-04-23 12:13:44,339 basehttp 124 "POST /register/ HTTP/1.1" 302 0
+INFO 2019-04-23 12:13:44,406 basehttp 124 "GET / HTTP/1.1" 200 25127
+INFO 2019-04-23 12:13:44,467 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,476 basehttp 124 "GET /static/images/goods/goods001.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,529 basehttp 124 "GET /static/images/goods/goods002.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,533 basehttp 124 "GET /static/images/slide01.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,536 basehttp 124 "GET /static/images/slide02.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,538 basehttp 124 "GET /static/images/slide03.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,539 basehttp 124 "GET /static/images/slide04.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,540 basehttp 124 "GET /static/images/adv01.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,587 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,588 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,589 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,594 basehttp 124 "GET /static/images/banner01.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,624 basehttp 124 "GET /static/images/goods/goods003.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,627 basehttp 124 "GET /static/images/goods/goods004.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,628 basehttp 124 "GET /static/images/goods/goods005.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,631 basehttp 124 "GET /static/images/banner02.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,635 basehttp 124 "GET /static/images/goods/goods008.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,642 basehttp 124 "GET /static/images/banner03.jpg HTTP/1.1" 304 0
+INFO 2019-04-23 12:13:44,646 basehttp 124 "GET /static/images/goods/goods009.jpg HTTP/1.1" 304 0
+WARNING 2019-04-23 12:13:45,851 base 152 Not Found: /carts/simple/
+WARNING 2019-04-23 12:13:45,857 basehttp 124 "GET /carts/simple/ HTTP/1.1" 404 2825

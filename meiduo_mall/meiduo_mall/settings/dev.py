@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig', #基于manage.py来写的
     'contents.apps.ContentsConfig',
+    'verifications.apps.VerificationsConfig',
 ]
 
 MIDDLEWARE = [

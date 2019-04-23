@@ -1,8 +1,9 @@
 import re
 from django import http
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.models import AbstractUser, User
+from django.contrib.auth.models import AbstractUser
 from django.shortcuts import render, redirect
+from .models import User
 
 # Create your views here.
 from django.urls import reverse
@@ -19,17 +20,19 @@ class RegisterView(View):
         :param request: 请求对象
         :return: 注册界面
         """
-        print("adsfasdf")
+
         return render(request, 'register.html')
     def post(self,request):
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        password2 = request.POST.get('password2')
-        mobile = request.POST.get('mobile')
+        username = request.POST.get('user_name')
+        print(username)
+        password = request.POST.get('pwd')
+        password2 = request.POST.get('cpwd')
+        mobile = request.POST.get('phone')
         allow = request.POST.get('allow')
 
         #判断参数是否齐全
         if not all([username, password, password2, mobile, allow]):
+            print(username,password, password2, mobile, allow)
             return http.HttpResponseForbidden('缺少参数')
         #判断用户名是否是５－２０个字符
         if not re.match(r'^[a-zA-Z0-9_-]{5,20}$', username):
@@ -76,7 +79,8 @@ class UsernameCountView(View):
         :return: JSON
         """
         count = User.objects.filter(username=username).count()
-        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK', 'count': count})
+        #对应ajax请求返回json格式，所以用JsonResponse
+        return http.JsonResponse({'count': count})
 
 class MobileCountView(View):
     """判断手机号是否重复注册"""
@@ -88,5 +92,5 @@ class MobileCountView(View):
         :return: JSON
         """
         count = User.objects.filter(mobile=mobile).count()
-        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'OK', 'count': count})
+        return http.JsonResponse({'count': count})
 
