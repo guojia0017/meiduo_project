@@ -136,6 +136,24 @@ var vm = new Vue({
                 this.error_image_code = false;
             }
 
+            if (this.error_image_code == false) {
+                var url = this.host + '/imagecheck/' + this.image_code +'/'+ this.image_code_id;
+                axios.get(url, {
+                    responseType: 'json'
+                })
+                    .then(response => {
+                        if (response.data.count > 0) {
+                            this.error_image_code_message = '图形验证码错误';
+                            this.error_image_code = true;
+                        } else {
+                            this.error_image_code = false;
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error.response);
+                    })
+            }
+
         },
         // 检查短信验证码
         check_sms_code: function () {
